@@ -19,7 +19,7 @@
                 <h2>Congratulations</h2>
                 <p>A simple PHP application (release 1.0) is now running on a container in Amazon ECS </p>
                 <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
-                <p>CD to be tested by AWS COE </p>
+                <p><font color="blue">Continuous Deployment</font> to be tested by AWS COE </p>
                 <?php
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
